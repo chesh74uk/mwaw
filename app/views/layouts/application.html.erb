@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mwaw</title>
+    <title>MWAW</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <div class="container">
+      <%= render partial: "layouts/menu" %>
       <%= yield %>
-    </div>
-    
   </body>
 </html>
